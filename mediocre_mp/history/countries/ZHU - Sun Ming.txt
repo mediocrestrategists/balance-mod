@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = celestial_empire
+technology_group = chinese
+religion = confucianism
+primary_culture = jianghuai
+capital = 1821	#Nanjing
+
+1436.1.1 = {
+	monarch = {
+		name = "Qin"
+		dynasty = "Zhu"
+		adm = 4
+		dip = 5
+		mil = 1
+	}
+	
+}

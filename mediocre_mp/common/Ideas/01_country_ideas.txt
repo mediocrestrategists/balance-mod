@@ -1,0 +1,716 @@
+JIA_ideas = {
+	start = {
+	fire_damage_received = -0.05
+	infantry_power = 0.10
+	}
+	bonus = {
+	envoy_travel_time = -0.20
+	}
+	trigger = {
+	tag = JIA
+	}
+	free = yes
+	tax_office_of_jinan = {
+	global_tax_modifier = 0.20
+	}
+	the_guard_must_not_be_broken = {
+	reinforce_speed = 0.20
+	global_regiment_recruit_speed = -0.10
+	}
+	glory_or_death = {
+	prestige_from_land = 1
+	}
+	war_industry_to_fuel_the_guard = {
+	development_cost = -0.05
+	global_trade_goods_size_modifier = 0.05
+	}
+	competing_with_laizhou = {
+	global_trade_power = 0.10
+	}
+	the_guard_shal_not_break = {
+	land_morale = 0.10
+	}
+	artillery_to_reinforce_the_guard = {
+	artillery_power = 0.05
+	artillery_cost = -0.05
+	}
+}
+SCH_ideas = {
+	start = {
+	infantry_power = 0.15
+	global_tax_modifier = 0.10
+	}
+	bonus = {
+	fire_damage_received = -0.15
+	}
+	trigger = {
+	tag = SCH
+	}
+	free = yes
+	warrior_culture = {
+	land_morale = 0.05
+	global_manpower_modifier = 0.10
+	}
+	rationing_system = {
+	land_attrition = -0.10
+	}
+	the_many_valleys_of_sichuan = {
+	num_accepted_cultures = 1
+	}
+	warrior_clans = {
+	army_tradition = 1
+	}
+	great_monasteries_and_forts_of_sichuan = {
+	build_cost = -0.15
+	}
+	taoist_traditions = {
+	tolerance_own = 2
+	}
+	diplomatic_corps_of_the_tang = {
+	envoy_travel_time = -0.20
+	diplomats = 1
+	}
+
+}
+
+SCA_ideas = {
+	start = {
+		infantry_power = 0.15
+		trade_efficiency = 0.1
+	}
+
+	bonus = {
+		legitimacy = 1
+	}
+
+	trigger = {
+		tag = SCA
+	}
+	free = yes		#will be added at load.
+
+	pax_scandia = {
+		global_unrest = -1
+	}
+	integration_of_indelningsverket_and_ledingesystemet = {
+		global_manpower_modifier = 0.2
+		global_sailors_modifier = 0.2
+	}
+	bound_together_by_the_sea = {
+		naval_morale = 0.1
+	}
+	scandinavian_meritocracy = {
+		possible_policy = 1
+	}
+	tran_sound_navy = {
+		naval_forcelimit_modifier = 0.25
+	}
+	scandinavian_steel = {
+		discipline = 0.05
+	}
+	forest_and_archipelago_leader_training = {
+		leader_land_shock = 1
+		leader_naval_shock = 1
+	}
+}
+ZHU_ideas = {
+	start = {
+		land_maintenance_modifier = -0.1
+		diplomats = 1
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+		leader_naval_fire = 1
+	}	
+
+	trigger = {
+		tag = ZHU
+	}
+	free = yes
+	
+	ZHU_1 = {
+		ae_impact = -0.15
+	}
+	ZHU_2 = {
+		global_tax_modifier = 0.15
+	}
+	ZHU_3 = {
+		discipline = 0.05
+	}
+	ZHU_4= {
+		production_efficiency = 0.1		
+	}
+	ZHU_5 = {
+		trade_efficiency = 0.1
+	}
+	ZHU_6 = {
+		infantry_power = 0.1
+	}
+	ZHU_7 = {
+		global_unrest = -1
+	}
+}
+
+HOR_ideas = {
+	start = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.2
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.15
+	}	
+	trigger = {
+		tag = HOR
+	}
+	free = yes
+	
+	HOR_1 = {
+		caravan_power = 0.2
+	}
+	HOR_2 = {
+		nobles_loyalty_modifier = 0.05
+		nomadic_tribes_loyalty_modifier = 0.05
+	}
+	HOR_3 = {
+		loot_amount = 0.2
+	}
+	HOR_4= {
+		cavalry_fire = 0.5
+	}
+	HOR_5 = {
+		province_warscore_cost = -0.2
+	}
+	HOR_6 = {
+		manpower_recovery_speed = 0.2
+	}
+	HOR_7 = {
+		no_religion_penalty = yes
+	}
+}	
+
+SHX_ideas = {
+	start = {
+		defensiveness = 0.3
+		shock_damage_received = -0.1
+	}
+	
+	bonus = {
+		church_loyalty_modifier = 0.1
+	}	
+
+	trigger = {
+		tag = SHX
+	}
+	free = yes
+	
+	SHX_1 = {
+		garrison_size = 0.25
+		enemy_core_creation = 0.1
+	}
+	SHX_2 = {
+		land_morale = 0.10
+	}
+	SHX_3 = {
+		hostile_attrition = 2
+	}
+	SHX_4= {
+		production_efficiency = 0.1
+	}
+	SHX_5 = {
+		development_cost = -0.05
+		trade_efficiency = 0.05
+	}
+	SHX_6 = {
+		advisor_pool = 1
+		fort_maintenance_modifier = -0.1
+	}
+	SHX_7 = {
+		yearly_corruption = -0.1
+	}
+}
+
+YUY_ideas = {
+	start = {
+		shock_damage_received = -0.15
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}	
+
+	trigger = {
+		tag = YUY
+	}
+	free = yes
+	
+	YUY_1 = {
+		infantry_power = 0.2
+	}
+	YUY_2 = {
+		global_institution_spread = 0.15
+		technology_cost = -0.05
+	}
+	YUY_3 = {
+		defensiveness = 0.25
+	}
+	YUY_4 = {
+		war_exhaustion = -0.05
+	}
+	YUY_5 = {
+		governing_capacity = 100
+		reform_progress_growth = 0.05
+	}
+	YUY_6 = {
+		legitimacy = 1
+		republican_tradition = 0.2
+		devotion = 0.5
+	}
+	YUY_7 = {
+		inflation_action_cost = -0.1
+	}
+}
+
+CCU_ideas = {
+	start = {
+		production_efficiency = 0.2
+		global_tax_modifier  = 0.1
+	}
+	
+	bonus = {
+		free_adm_policy = 1
+	}	
+
+	trigger = {
+		tag = CCU
+	}
+	free = yes
+	
+	CCU_1 = {
+		stability_cost_modifier = -0.2
+	}
+	CCU_2 = {
+		land_forcelimit_modifier = 0.15
+	}
+	CCU_3 = {
+		development_cost = -0.1
+	}
+	CCU_4= {
+		global_trade_goods_size_modifier = 0.1
+		global_autonomy = -0.02
+	}
+	CCU_5 = {
+		diplomatic_upkeep = 1
+	}
+	CCU_6 = {
+		global_manpower_modifier = 0.2
+		
+	}
+	CCU_7 = {
+		land_morale = 0.15 # dunno if correct manpower and morale are grouped together in the docs but that leaves 9 NI instead of 10
+	}
+}
+
+ZHO_ideas = {
+	start = {
+		manpower_recovery_speed = 0.25
+		land_forcelimit_modifier = 0.2
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.3
+	}	
+
+	trigger = {
+		tag = ZHO
+	}
+	free = yes
+	
+	ZHO_1 = {
+		global_regiment_cost = -0.1
+	}
+	ZHO_2 = {
+		global_autonomy = -0.05
+	}
+	ZHO_3 = {
+		nobles_loyalty_modifier = 0.05
+	}
+	ZHO_4= {
+		stability_cost_modifier = -0.1
+	}
+	ZHO_5 = {
+		development_cost = -0.05
+		religious_unity = 0.05
+	}
+	ZHO_6 = {
+		global_sailors_modifier = 0.2
+	}
+	ZHO_7 = {
+		global_own_trade_power = 0.2
+	}
+}
+
+DAX_ideas = {
+	start = {
+		infantry_power = 0.15
+		global_manpower_modifier = 0.20
+	}
+	
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = DAX
+	}
+	free = yes
+	
+	the_great_cities_of_olden_times = {
+		prestige = 2
+	}
+	harmonious_ways = {
+		num_accepted_cultures = 1
+	}
+	training_through_the_highlands = {
+		#leader_land_manuever = 1
+		army_tradition_decay = -0.005										#made by bread
+	}
+	integration_of_the_qinwang = {
+		development_cost = -0.10
+		nobles_loyalty_modifier = 0.05
+	}
+	taoist_warriors = {
+	discipline = 0.05	
+	}
+	great_reconstruction_works = {
+		build_cost = -0.10
+	}
+	home_of_taoism = {
+		tolerance_own = 2
+	}
+}
+
+CHI_ideas = {
+	start = {
+		development_cost = -0.10
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		artillery_power = 0.1
+	}
+	
+	trigger = {
+		tag = MNG
+	}
+	free = yes		#will be added at load.
+	
+	nine_garrisons_of_the_great_wall = {
+		defensiveness = 0.20
+		garrison_size = 0.20
+	}
+	revived_three_grand_divisions = {
+		discipline = 0.05
+	}
+	inward_perfection = {
+		stability_cost_modifier = -0.30
+	}
+	yellow_river_dykes = {
+		production_efficiency = 0.20
+	}
+	salt_monopoly = {
+		trade_efficiency = 0.15
+	}
+	single_whip_law = {
+		global_tax_modifier = 0.10
+		administrative_efficiency = 0.05
+	}
+	the_red_cannon = {
+		leader_land_fire = 1
+		leader_naval_fire = 1
+	}
+}
+
+WWU_ideas = {
+	start = {
+	global_tax_modifier = 0.20
+	land_forcelimit_modifier = 0.20
+	}
+	bonus = {
+	defensiveness = 0.20
+	}
+	
+	trigger = {
+		tag = WWU
+		tag = NCH
+	}
+	free = yes #will be added at load
+	
+	enlightend_warriors = {
+	land_morale = 0.10
+	global_regiment_cost = -0.10
+	}
+	office_of_officers = {
+	leader_land_manuever = 1
+	leader_naval_manuever = 1
+	}
+	office_of_justice = {
+	global_unrest = -1
+	}
+	office_of_conscription = {
+	global_manpower_modifier = 0.20
+	}
+	office_of_economics = {
+	trade_efficiency = 0.10
+	production_efficiency = 0.10
+	}
+	office_of_development = {
+	development_cost = -0.05
+	}
+	riggid_society = {
+	discipline = 0.05
+	}
+}
+
+CWU_ideas = {
+	start = {
+	core_creation = -0.20
+	fabricate_claims_cost = -0.50
+	}
+	bonus = {
+	global_manpower_modifier = 0.25
+	}
+	trigger = {
+	tag = CWU
+	}
+	free = yes #will be added at load
+	Jingdezhen  = {
+	global_trade_goods_size_modifier = 0.15
+	}
+	wu_cultures = {
+	num_accepted_cultures = 1
+	}
+	river_navy = {
+	galley_power = 0.15
+	naval_maintenance_modifier = -0.05
+	}
+	the_hills_of_wu = {
+	movement_speed = 0.15
+	#local_hostile_movement_speed = 0.10 #prob doesn't work, might just give the hill provinces the modifier and then give wu 15% movement speed instead
+	}
+	generals_of_wu = {
+	leader_land_manuever = 2
+	}
+	road_between_canton_and_nanjing = {
+	development_cost = -0.05
+	global_institution_spread = 0.20
+	}
+	horse_cavalry_of_the_hills = {
+	shock_damage = 0.10
+	}
+	
+}
+SGA_ideas = {
+	start = {
+	leader_land_shock = 1
+	leader_land_manuever = 1
+	}
+	bonus = {
+	leader_land_fire = 1
+	}
+	trigger = {
+	tag = SGA
+	}
+	free = yes #will be added at load
+
+
+	office_of_the_census = {
+	global_tax_modifier = 0.20
+	}
+	scholars_of_the_gan = {
+	advisor_cost = -0.15
+	}
+	schools_of_Nanchang  = {
+	advisor_pool = 2
+	}
+	royal_school = {
+	monarch_admin_power = 1
+	}
+	enlightned_rule = {
+	legitimacy = 1
+	republican_tradition = 0.2
+	meritocracy = 0.3
+	}
+	office_of_justice = {
+	global_unrest = -2
+	}
+	office_of_record_keeping = {
+	navy_tradition_decay = -0.01
+	army_tradition_decay = -0.01
+	}
+}
+LAZ_ideas = {
+	start = {
+		trade_efficiency = 0.2
+		light_ship_cost = -0.1
+	}
+	
+	bonus = {
+		trade_steering = 0.1
+	}	
+
+	trigger = {
+		tag = LAZ
+	}
+	free = yes
+	
+	city_guard_standing_army = {
+		infantry_power = 0.10
+	}
+	solving_the_microeconomtric_gravity_equation = {
+		global_trade_power = 0.2
+	}
+	docks_of_laizhou = {
+		naval_forcelimit_modifier = 0.15
+	}
+	reliance_on_mercenaries = {
+		mercenary_discipline = 0.05
+	}
+	influx_of_artisans = {
+		development_cost = -0.05
+		global_trade_goods_size_modifier = 0.1
+	}
+	merchant_clans = {
+		merchants = 1
+	}
+	great_walls_off_laizhou = {
+		defensiveness = 0.2
+		fort_maintenance_modifier = -0.1
+	}
+}
+trading_city_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		light_ship_cost = -0.1
+	}
+	
+	bonus = {
+		development_cost = -0.10
+	}	
+
+	trigger = {
+		or = {
+			tag = TMA
+			tag = TYA
+			tag = TNI
+		}
+	}
+	free = yes
+	
+	elite_city_guard = {
+		infantry_power = 0.15
+	}
+	solving_the_microeconomtric_Input_output_equation = {
+		global_trade_power = 0.1
+	}
+	merchant_sponsored_fleet = {
+		naval_maintenance_modifier = -0.10
+	}
+	reliance_on_mercenaries = {
+		mercenary_discipline = 0.05
+	}
+	gathering_of_artisans = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	the_pen_is_stronger_than_the_coin = {
+		diplomats = 1
+	}
+	city_walls = {
+		defensiveness = 0.2
+	}
+}
+
+TAW_ideas = {
+	start = {
+	infantry_power = 0.15
+	fire_damage = 0.10
+	}
+	
+	bonus = {
+	monarch_diplomatic_power = 1
+	}
+
+	trigger = {
+	tag = TAW
+	}
+	free = yes #will be added at load
+
+	taiwanese_wood_working = {
+	global_ship_cost = -0.10
+	}
+	polynesian_co-operation = {
+	global_colonial_growth = 10
+	native_assimilation = 0.25
+	}
+	defense_of_the_waters = {
+	naval_forcelimit_modifier = 0.25
+	}
+	office_of_the_admiralty = {
+	leader_naval_manuever = 2
+	}
+	naval_roots = {
+	navy_tradition = 1
+	}
+	great_forests_of_taipeng = {
+	build_cost = -0.10
+	}
+	continuation_of_the_ming_legacy = {
+	prestige = 1
+	}
+}
+
+TBO_ideas = {
+    start = {
+    discipline = 0.05
+    cb_on_religious_enemies = yes
+    }
+
+    bonus = {
+    infantry_shock = 0.5
+    artillery_shock = 1
+    }
+
+    trigger = {
+    tag = TBO
+    }
+    free = yes #will be added at load
+
+    TBO_1 = {
+    manpower_in_true_faith_provinces = 0.15
+    }
+    TBO_2 = {
+    leader_cost = -0.2
+    }
+    TBO_3 = {
+    land_morale = 0.15
+    }
+    TBO_4 = {
+    trade_efficiency = 0.15
+    church_loyalty_modifier = 0.1
+    }
+    TBO_5 = {
+    culture_conversion_cost = -0.15
+    same_culture_advisor_cost = -0.15
+    }
+    TBO_6 = {
+    war_exhaustion = -0.05
+    monthly_militarized_society = 0.05
+    }
+    TBO_7 = {
+    tolerance_own = 3
+    global_missionary_strength = 0.03
+    prestige = 1
+    }
+
+}

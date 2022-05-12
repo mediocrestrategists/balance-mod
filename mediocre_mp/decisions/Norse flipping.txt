@@ -1,0 +1,24 @@
+country_decisions = {
+	norse_conversion = {
+	major = yes
+		potential = {
+			NOT = {
+			has_country_flag = Norse
+			}
+			or = {
+			tag = SCA
+			tag = ICE
+			tag = SMI
+			}
+		}
+		allow = {
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		}
+		effect = {
+		change_religion = norse_pagan_reformed
+		set_country_flag = Norse
+		}
+
+	}
+}

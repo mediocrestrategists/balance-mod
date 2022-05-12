@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = chinese_warlord
+technology_group = chinese
+religion = confucianism
+primary_culture = chihan
+capital = 1816	#Bejing
+
+1433.1.1 = {
+	monarch = {
+		name = "Yu"
+		dynasty = "Huang"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	
+}
+1433.1.1 = {
+	heir = {
+		birth_date = 1440.11.11
+		name = "Sikong"
+		dynasty = "Huang"
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+	
+}

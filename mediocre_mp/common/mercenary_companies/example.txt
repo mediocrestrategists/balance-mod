@@ -1,0 +1,112 @@
+#
+# Example mercenary companies
+#
+
+
+
+merc_local_grand_company_cav_1 = {
+    regiments_per_development = 0.05
+    cavalry_weight = 1
+    cavalry_cap = 40
+    trigger = {
+        total_development = 150
+    }
+    cost_modifier = 2.5
+    # No home province means local mercenary company
+}
+
+Noble_recruits = {
+    regiments_per_development = 0.05
+    cavalry_weight = 1
+    cavalry_cap = 40
+	trigger = {
+	    OR = {
+            full_idea_group = aristocracy_ideas
+            full_idea_group = horde_gov_ideas
+		}
+	}
+	cost_modifier = 1.5
+}
+
+merc_local_free_company_cav_2 = {
+    regiments_per_development = 0.05
+    cavalry_weight = 1
+    cavalry_cap = 40
+    trigger = {
+        total_development = 150
+    }
+    # No home province means local mercenary company
+}
+
+merc_local_free_company_cav_1 = {
+    regiments_per_development = 0.05
+    cavalry_weight = 1
+    cavalry_cap = 40
+    trigger = {
+        total_development = 50
+    }
+    # No home province means local mercenary company
+}
+
+merc_local_grand_company_2 = {
+    regiments_per_development = 0.05
+    trigger = {
+        total_development = 150
+    }
+    cost_modifier = 2.5
+    # No home province means local mercenary company
+}
+
+merc_local_grand_company_1 = {
+    regiments_per_development = 0.05
+    trigger = {
+        total_development = 150
+    }
+    cost_modifier = 2.5
+    # No home province means local mercenary company
+}
+
+Bourgeois_recruits = {
+    regiments_per_development = 0.05
+	trigger = {
+		full_idea_group = plutocracy_ideas
+	}
+	cost_modifier = 1.5
+}
+
+merc_local_free_company_3 = {
+    regiments_per_development = 0.05
+    trigger = {
+        total_development = 150
+    }
+    # No home province means local mercenary company
+}
+
+merc_local_free_company_2 = {
+    regiments_per_development = 0.05
+    trigger = {
+        total_development = 100
+    }
+    # No home province means local mercenary company
+}
+
+merc_local_free_company_1 = {
+    regiments_per_development = 0.05
+    trigger = {
+        total_development = 50
+    }
+    # No home province means local mercenary company
+}
+
+merc_local_small_company = {
+    regiments_per_development = 0.05
+    trigger = {
+        NOT = { total_development = 150 }
+    }
+    cost_modifier = 0.3
+    modifier = {
+        reinforce_speed = -0.25
+        recover_army_morale_speed = -0.1
+    }
+    # No home province means local mercenary company
+}

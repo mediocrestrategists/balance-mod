@@ -1,0 +1,6 @@
+government = theocracy
+add_government_reform = baltic_crusader_state
+primary_culture = prussian
+religion = catholic
+technology_group = western
+capital = 41

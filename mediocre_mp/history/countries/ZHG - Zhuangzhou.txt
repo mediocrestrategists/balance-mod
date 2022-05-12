@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = zhuang
+religion = confucianism
+technology_group = chinese
+capital = 2163	# Liuzhou
+
+1433.1.1 = {
+	monarch = {
+		name = "Zhou"
+		dynasty = "Huang"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+	
+}
+
+

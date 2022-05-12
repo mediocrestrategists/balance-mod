@@ -1,0 +1,28 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = yi
+religion = vajrayana
+technology_group = chinese
+capital = 4199	# Tongren
+
+1411.2.5 = {
+	monarch = {
+	name = "An"
+	dynasty = "Longfu"
+	adm = 6
+	dip = 5
+	mil = 6
+	}
+}
+
+1441.6.7 = {
+	heir = {
+		birth_date = 1441.6.7
+		name = "An"
+		dynasty = "Guan"
+		adm = 3
+		dip = 0
+		mil = 5
+	}
+	
+}

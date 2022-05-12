@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = cantonese
+add_accepted_culture = chimin
+capital = 667	#Canton
+
+1430.7.4 = {
+	monarch = {
+		name = "Weifang"
+		dynasty = "Zhang"
+		adm = 4
+		dip = 4 #1
+		mil = 2 #2
+	}
+}

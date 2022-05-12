@@ -1,0 +1,77 @@
+namespace = PersonalUnion
+country_event = {
+	id = PersonalUnion.1
+	title = "PersonalUnion.1.t"
+	desc = "PersonalUnion.1.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+	ai = no
+	is_lesser_in_union = yes
+	NOT = { is_year = 1445 }
+	NOT = { has_country_flag = PersonalUnion }
+	}
+	mean_time_to_happen = {
+	days = 1
+	}
+	immediate =
+	{
+	   set_country_flag = PersonalUnion
+	}
+	option = {
+	   name = "PersonalUnion.1.a"
+	   add_prestige =-1
+	}
+	option = {
+	   name = "PersonalUnion.1.b"
+	   add_prestige =1
+	   country_event = {
+       			id = PersonalUnion.2
+       			days = 1
+       }
+	}
+
+}
+country_event = {
+	id = PersonalUnion.2
+	title = PersonalUnion.2.t
+	desc = PersonalUnion.2.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+option = {
+    name = "PersonalUnion.2.a"
+    define_ruler = {
+            change_adm = -1
+            change_dip = -1
+            change_mil = -1
+            min_age = 20
+            max_age = 30
+            name ="Seillem"
+        }
+}
+option = {
+    name = "PersonalUnion.2.b"
+    define_ruler = {
+            change_adm = -1
+            change_dip = -1
+            change_mil = -1
+            min_age = 20
+            max_age = 30
+            name ="Sprang"
+        }
+}
+option = {
+    name = "PersonalUnion.2.c"
+    define_ruler = {
+            change_adm = -1
+            change_dip = -1
+            change_mil = -1
+            min_age = 20
+            max_age = 30
+            name ="Pench"
+        }
+    }
+
+}
+
+

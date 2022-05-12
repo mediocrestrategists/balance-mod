@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = hubei
+capital = 682	#Wuchang
+
+1442.1.1 = { #Suleimans Uncle
+	monarch = {
+		name = "Murong"
+		dynasty = "Chu"
+		adm = 3
+		dip = 4
+		mil = 3 #1
+	}
+}

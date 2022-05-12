@@ -1,0 +1,11 @@
+﻿l_english:
+ global_sideline:0 "On the Global Sideline"
+ global_sideline_desc:0 "As a colonial nation, we're not fully participating on the international stage. This limits our potential. (Mediocre Balance Mod Modifier)"
+ native_isolation:0 "Native Isolation"
+ native_isolation_desc:0 "As a native nation, we're not fully participating on the international stage. This limits our potential. (Mediocre Balance Mod Modifier)"
+ late_medieval_food_stock:0 "Late Medieval Food Stock"
+ late_medieval_food_stock_desc:0 "The growing availability of food has enabled us to increase the garrisons of our forts. (Mediocre Balance Mod Modifier)"
+ early_modern_engineers:0 "Early Modern Engineers"
+ early_modern_engineers_desc:0 "New contruction techniques allow our forts to house more defenders than ever before. (Mediocre Balance Mod Modifier)"
+ declining_importance_of_fortifications:0 "Declining Importance of Fortifications"
+ declining_importance_of_fortifications_desc:0 "The rise of great caliber artillery has rendered parts of our fortifications useless. (Mediocre Balance Mod Modifier)"

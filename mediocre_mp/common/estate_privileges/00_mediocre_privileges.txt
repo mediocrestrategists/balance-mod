@@ -1,0 +1,91 @@
+estate_clergy_monastic_settlements = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = -10
+	influence = 0.15
+	loyalty = 0.10
+	is_valid = {
+	    tag = TIB
+	    has_idea_group = TIB_ideas
+	    OR = {
+            religion = vajrayana
+            religion = buddhism
+            religion = mahayana
+	    }
+		any_owned_province = {
+            OR = {
+                has_terrain = mountain
+                has_terrain = highlands
+                has_terrain = hills
+            }
+        }
+	}
+	on_granted = {
+		custom_tooltip = estate_clergy_monastic_settlements_effect_tooltip
+
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+				OR = {
+                    has_terrain = mountain
+                    has_terrain = highlands
+                    has_terrain = hills
+				    }
+				}
+				add_province_modifier = {
+					name = estate_clergy_monastic_settlements_mountains
+					duration = -1
+				}
+			}
+			every_owned_province = {
+            				limit = {
+                                has_climate = arctic
+            				}
+            				add_province_modifier = {
+            					name = estate_clergy_monastic_settlements_arctic
+            					duration = -1
+            				}
+            }
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_clergy_monastic_settlements_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_clergy_monastic_settlements_mountains
+				}
+				remove_province_modifier = estate_clergy_monastic_settlements_mountains
+			}
+			every_owned_province = {
+            				limit = {
+            					has_province_modifier = estate_clergy_monastic_settlements_arctic
+            				}
+            				remove_province_modifier = estate_clergy_monastic_settlements_arctic
+            }
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_clergy_monastic_settlements_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_clergy_monastic_settlements_mountains
+				}
+				remove_province_modifier = estate_clergy_monastic_settlements_mountains
+			}
+			every_owned_province = {
+                        				limit = {
+                        					has_province_modifier = estate_clergy_monastic_settlements_arctic
+                        				}
+                        				remove_province_modifier = estate_clergy_monastic_settlements_arctic
+            }
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

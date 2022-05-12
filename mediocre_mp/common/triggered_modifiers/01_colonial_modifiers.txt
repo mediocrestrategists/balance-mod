@@ -1,0 +1,121 @@
+global_sideline = {
+	potential = {
+	OR = {
+	    has_country_flag = changed_from_colonial_nation
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = new_world
+				colonial_region = colonial_australia
+			}
+		}	
+	}
+	}
+	trigger = {
+        OR = {
+            has_country_flag = changed_from_colonial_nation
+            AND = {
+				NOT = {
+					OR = {
+                        technology_group = north_american
+                        technology_group = mesoamerican
+                        technology_group = andean
+                        technology_group = high_american
+                        technology_group = south_american
+                        technology_group = aboriginal_tech
+                        technology_group = polynesian_tech
+					}
+				}
+		        capital_scope = {
+                    OR = {
+                        continent = north_america
+                        continent = south_america
+                        continent = new_world
+                        colonial_region = colonial_australia
+                    }
+				}
+				ai = no
+			}
+		}
+	}
+	development_cost = 0.3
+	interest = 2
+	naval_forcelimit_modifier = -0.5
+	global_sailors_modifier = -0.5
+	land_forcelimit_modifier  = -0.5
+	global_manpower_modifier = -0.5
+}
+
+native_isolation = {
+	potential = {
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = new_world
+				colonial_region = colonial_australia
+			}
+		}	
+	}
+	trigger = {
+		OR = {
+			technology_group = north_american
+			technology_group = mesoamerican
+			technology_group = andean
+			technology_group = high_american
+			technology_group = south_american
+			technology_group = aboriginal_tech
+			technology_group = polynesian_tech
+		}
+		has_institution = feudalism
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = new_world
+				colonial_region = colonial_australia
+			}
+		}
+		ai = no
+	}
+	development_cost = 0.2
+}
+
+late_medieval_food_stock = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		 mil_tech = 7
+	}
+
+	garrison_size = 0.50
+}
+
+
+early_modern_engineers = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		 mil_tech = 12
+	}
+
+	garrison_size = 0.50
+}
+
+declining_importance_of_fortifications = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		 mil_tech = 24
+	}
+
+	garrison_size = -0.50
+}
+

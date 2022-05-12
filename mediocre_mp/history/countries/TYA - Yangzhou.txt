@@ -1,0 +1,16 @@
+government = republic
+add_government_reform = merchants_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = shandong_culture
+capital = 685	#Yangzhou
+1423.1.1 = {
+	monarch = {
+		name = "Zhi"
+		dynasty = "Kong"
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+	
+}

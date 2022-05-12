@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = wu
+add_accepted_culture = chimin
+capital = 669	#Fuzhou
+
+1430.7.4 = {
+	monarch = {
+		name = "Xianzhong"
+		dynasty = "Wu"
+		adm = 2
+		dip = 2 #1
+		mil = 5 #2
+	}
+}

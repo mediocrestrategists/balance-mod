@@ -1,0 +1,41 @@
+namespace = mediocre
+
+# FALL OF DELHI
+province_event = {
+	id = mediocre.1
+	title = "mediocre.1.t"
+	desc = "mediocre.1.d"
+	picture = COURT_eventPicture
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 522
+		DLH = { was_player = no }
+	}
+	
+	option = {
+		name = "mediocre.1.a"
+		if = {
+			limit = {
+				owner = { tag = SRH }
+			}
+			custom_tooltip = sirhind_is_basically_delhi_tooltip
+		}
+		if = {
+			limit = {
+				NOT = {
+					owner = { tag = SRH }
+				}
+			}
+			every_province = {
+				limit = {
+					is_core = DLH
+					NOT = { owner = {tag = DLH} }
+				}
+				remove_core = DLH
+			}
+		}
+	}
+}

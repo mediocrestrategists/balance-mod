@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = wu
+capital = 2149	#Ningbu
+1431.6.1 = {
+	monarch = {
+		name = "Yu"
+		dynasty = "Qia"
+		adm = 6
+		dip = 2
+		mil = 1
+	}
+	
+}

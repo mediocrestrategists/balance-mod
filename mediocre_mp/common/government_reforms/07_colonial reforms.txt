@@ -1,0 +1,203 @@
+crown_colony_government = {
+	icon = "peasants"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			has_reform = crown_colony_government
+		}
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		land_forcelimit_modifier  = 0.25
+		global_manpower_modifier = 0.25
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+}
+
+private_enterprise_colony_government = {
+	icon = "peasants"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			has_reform = private_enterprise_colony_government
+		}
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		interest = -1
+		naval_forcelimit_modifier = 0.25
+		global_sailors_modifier = 0.25
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+}
+
+self_governing_colony_government = {
+	icon = "peasants"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			has_reform = self_governing_colony_government
+		}
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		development_cost = -0.1
+		governing_capacity = 200
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	duration = 4
+}
+
+prussian_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+
+	potential = {
+		OR = {
+			AND = {
+				tag = PRU
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = GER
+				have_had_reform = prussian_monarchy
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = prussian_monarchy
+			}
+		}
+	}
+	trigger = {
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = prussian_monarchy_legacy
+    lock_level_when_selected = yes
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 1
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+	custom_attributes = {
+    		locked_government_type = yes
+    }
+}
+
+prussian_republic_reform = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			AND = {
+				tag = PRU
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = GER
+				OR = {
+					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_republic_reform
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				OR = {
+					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_republic_reform
+				}
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = prussian_republic
+
+	modifiers = {
+		war_exhaustion = -0.02
+		monthly_militarized_society = 0.05
+		global_autonomy = -0.075
+		republican_tradition = -0.5
+		max_absolutism = -10
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		generals_become_rulers = yes
+		locked_government_type = yes
+	}
+
+	has_term_election = no
+}
+
+Baltic_crusader_state = {
+	potential = {
+		tag = TBO
+		religion = catholic
+	}
+	modifiers = {
+	    governing_capacity_modifier = -0.5
+		fort_maintenance_modifier = -0.2
+	}
+	lock_level_when_selected = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	icon = "monks"
+	legacy_equivalent = monastic_order_government
+	monastic = yes
+
+	conditional = {
+    		allow = { has_dlc = "Rights of Man" }
+    		militarised_society = yes
+    }
+
+    custom_attributes = {
+    		locked_government_type = yes
+    	}
+}

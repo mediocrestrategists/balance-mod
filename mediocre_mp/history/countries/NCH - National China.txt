@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = confucian_bureaucracy
+technology_group = chinese
+religion = confucianism
+primary_culture = cantonese
+capital = 1821 #Nanjing^^
+
+1430.7.4 = {
+	monarch = {
+		name = "Li"
+		dynasty = "Feng"
+		adm = 4
+		dip = 3 #1
+		mil = 5 #2
+	}
+}

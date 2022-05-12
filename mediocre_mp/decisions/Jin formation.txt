@@ -1,0 +1,116 @@
+country_decisions = {
+	
+	Jin_formation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_jin_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = JIN }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			or = {
+			tag = CSH
+			tag = SHX
+			tag = YUY
+			tag = JIA
+			tag = LAI
+			tag = HOR
+			tag = MCH
+			tag = ZHO
+			}
+			or = {
+			culture_group = east_asian #chinese
+			tag = HOR
+			}
+		}
+		provinces_to_highlight = {
+			or = {
+				province_id = 1821			#Nanjing
+				province_id = 685			#Yangzhou
+				province_id = 1816			#Beijing keep
+				province_id = 1836			#Luoyang keep
+				province_id = 688			#Kaifeng keep
+				province_id = 699			#Lanzhou keep
+				province_id = 2139			#Laizhou keep
+				province_id = 691			#Jinan keep
+				province_id = 700			#xi'an
+				province_id = 726			#shenyang
+				province_id = 693			#Taiyuan
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			adm_tech = 10
+			or = {
+			owns_core_province = 1821 #nanjing			
+			owns_core_province = 685  #yangzhou
+			}					
+			owns_core_province = 1816			
+			owns_core_province = 1836			
+			owns_core_province = 688			
+			owns_core_province = 699			
+			owns_core_province = 2139			
+			owns_core_province = 691
+			owns_core_province = 700 #xi'an
+			owns_core_province = 726 #shenyang
+			owns_core_province = 693 #taiyuan
+			or = {
+			is_emperor_of_china = yes
+			government_rank = 3
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				is_city = yes
+				region = north_china_region
+			}
+		}
+		effect = {
+			change_tag = JIN
+			remove_non_electors_emperors_from_empire_effect = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			north_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WWU
+			}
+			#south_china_region = {
+			#	limit = {
+			#		NOT = { owned_by = ROOT }
+			#	}
+			#	add_permanent_claim = WWU
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = formed_jin_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

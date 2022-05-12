@@ -1,0 +1,166 @@
+country_decisions = {
+
+		prussian_nation_general = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_prussia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				is_religion_enabled = protestant
+				is_religion_enabled = reformed
+				is_religion_enabled = anglican
+			}
+			OR = {
+				primary_culture = pommeranian
+				primary_culture = saxon
+				primary_culture = prussian
+			}
+			NOT = { tag = PRU }
+			NOT = { exists = TBO}
+			NOT = { exists = PRU }
+			NOT = { tag = GER }
+			NOT = { tag = HLR }
+			NOT = { tag = TBO }
+			NOT = { has_reform = celestial_empire }
+			NOT = {
+				tag = TEU
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 41	# Königsberg
+				AND = {
+					OR = {
+						area = west_prussia_area
+						area = east_prussia_area
+					}
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								OR = {
+									area = west_prussia_area
+									area = east_prussia_area
+								}
+							}
+						}
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = PRU }
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = hussite
+				religion = anglican
+			}
+			owns_core_province = 41			# Königsberg
+			owns_core_province = 43			# Danzig
+			owns_core_province = 1841		# Marienburg
+			owns_core_province = 50			# Berlin
+			num_of_owned_provinces_with = {
+                value = 20
+                region = north_german_region
+                is_core = root
+            }
+
+		}
+		effect = {
+			change_tag = PRU
+			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			east_prussia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
+			if =  {
+				limit = {
+					is_revolutionary = no
+					NOT = {
+						government = republic
+					}
+				}
+				change_government_to_monarchy = yes
+				add_government_reform = prussian_monarchy
+			}
+			else_if = {
+				limit = {
+					is_revolutionary = no
+				}
+				add_government_reform = prussian_republic_reform
+			}
+			if = {
+				limit = {
+					has_reform = states_general_reform
+				}
+				remove_government_reform = states_general_reform
+			}
+			add_prestige = 25
+			change_primary_culture = prussian
+			capital_scope = {
+				change_culture = prussian
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					OR = {
+						culture = saxon
+						culture = pommeranian
+					}
+				}
+				change_culture = prussian
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRU_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			set_country_flag = formed_prussia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

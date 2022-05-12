@@ -1,0 +1,65 @@
+country_decisions = {
+
+	Teutonic_Baltic_Order = {
+		major = yes
+		potential = {
+		    NOT = { has_country_flag = formed_TBO}
+			was_never_end_game_tag_trigger = yes
+			primary_culture = prussian
+			NOT = { exists = TBO}
+			NOT = { exists = PRU }
+			capital_scope = {
+            	region = baltic_region
+            	is_core = ROOT
+            }
+		}
+		allow = {
+            adm_tech = 10
+            religion = catholic
+            government = theocracy
+            is_free_or_tributary_trigger = yes
+            is_nomad = no
+            is_at_war = no
+            has_reform = monastic_order_reform
+            num_of_owned_provinces_with = {
+                value = 26 #out of 26
+                region = baltic_region
+                is_core = root
+                religion = catholic
+            }
+            41 = {
+                culture = prussian
+            }
+            38 = {
+                culture = prussian
+            }
+            36 = {
+                culture = prussian
+            }
+            272 = {
+                culture = prussian
+            }
+            1841 = {
+                culture = prussian
+            }
+        }
+		effect = {
+		    change_tag = TBO
+		    change_government = theocracy
+            add_government_reform = Baltic_crusader_state
+            add_prestige = 25
+            if = {
+                limit = { has_custom_ideas = no }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+            set_country_flag = formed_TBO
+			}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

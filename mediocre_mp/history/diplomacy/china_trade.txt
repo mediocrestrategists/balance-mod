@@ -1,0 +1,30 @@
+alliance = {
+	first = LAI
+	second = TNI
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1581.1.1
+}
+
+alliance = {
+	first = LAI
+	second = TMA
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1581.1.1
+}
+alliance = {
+	first = LAI
+	second = TYA
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1581.1.1
+}
+
+alliance = {
+	first = LAI
+	second = HLA
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1581.1.1
+}
